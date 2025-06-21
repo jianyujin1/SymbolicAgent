@@ -1,4 +1,4 @@
-# 🧠 A Reusable Symbolic Agent for Interpretable Planning and Lifelong Generalization
+# A Reusable Symbolic Agent for Interpretable Planning and Lifelong Generalization
 
 This project implements a symbolic agent that can:
 
