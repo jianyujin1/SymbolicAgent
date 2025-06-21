@@ -105,12 +105,5 @@ Evaluate against baselines (IsCiL, NeSyC, ICPAD) in common simulated planning en
 
 ---
 
-## File Structure
 
-```
-SymbolicPlanner.v1.ipynb      # Main notebook
-/mnt/data/LaSER_Symbolic_Log  # Log directory for learned predicates
-```
-
-Let me know if you'd like this README exported as a `.md` file!
 
