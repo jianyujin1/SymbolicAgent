@@ -11,18 +11,18 @@ It is inspired by recent advances in continual learning and interpretable planni
 
 ---
 
-## ✅ Completed Tasks (Task 1–4)
+## Completed Tasks (Task 1–4)
 
 | Task | Description                           | Success After Learning | Notes                       |
 | ---- | ------------------------------------- | ---------------------- | --------------------------- |
-| 1    | Pick and grasp a cup                  | ✅                      | Requires `clear(cup)`       |
-| 2    | Place the cup on the shelf            | ✅                      | Requires `reachable(shelf)` |
-| 3    | Place bottle in box                   | ✅                      | Requires `open(box)`        |
-| 4    | Place cup in box (zero-shot general.) | ✅                      | Reused `open(box)` from T3  |
+| 1    | Pick and grasp a cup                  | S                     | Requires `clear(cup)`       |
+| 2    | Place the cup on the shelf            | S                    | Requires `reachable(shelf)` |
+| 3    | Place bottle in box                   | S                    | Requires `open(box)`        |
+| 4    | Place cup in box (zero-shot general.) | S                      | Reused `open(box)` from T3  |
 
 ---
 
-## 🔁 Symbolic Learning Log
+## Symbolic Learning Log
 
 After a failed plan execution, the system attempts to infer a missing symbolic precondition and appends it to a persistent symbolic log. Logged predicates are automatically reused in future tasks via:
 
@@ -38,7 +38,7 @@ logger.log_learned_predicate(Predicate("open", ["box"]))
 
 ---
 
-## 📊 Predicate Usage Tracking
+## Predicate Usage Tracking
 
 To support ablation and pruning, the system tracks the number of times each predicate is used during planning.
 
@@ -53,7 +53,7 @@ Low-usage predicates are flagged for possible pruning.
 
 ---
 
-## 🧪 Evaluation Plan
+## Evaluation Plan
 
 ### Environments
 
@@ -76,7 +76,7 @@ Low-usage predicates are flagged for possible pruning.
 
 ---
 
-## 💡 Sample Code Snippet
+## Sample Code Snippet
 
 Define an operator and plan:
 
@@ -99,13 +99,13 @@ steps = plan(initial_state, goal_state, operators)
 
 ---
 
-## 🔄 Next Step
+## Next Step
 
 Evaluate against baselines (IsCiL, NeSyC, ICPAD) in common simulated planning environments.
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```
 SymbolicPlanner.v1.ipynb      # Main notebook
